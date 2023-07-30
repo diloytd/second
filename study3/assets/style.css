@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+.header {
+  /* background-color: rgb(106, 90, 154); */
+  background: linear-gradient(to right, blue, rgb(151, 35, 209) 50%);
+  z-index: -1;
+  width: 100vw;
+  height: 200px;
+  margin: 0px;
+  padding: 0px;
+}
+.logo {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 100px;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+}
+.child {
+  font-family: "Lobster", sans-serif;
+  color: black;
+  font-size: 25px;
+  font-style: italic;
+  padding: 20px 20px 20px 20px;
+  margin-top: 50px;
+  margin-right: 20px;
+  transition: 1s;
+}
+.child-two {
+  text-decoration: none;
+  transition: 1s;
+}
+
+.child-two:hover {
+  transform: transition (1.5);
+  color: aqua;
+}
+.child-two:hover {
+  transform: scale(3);
+}
+.child:hover {
+  transform: scale(2);
+}
+
+.child:nth-child(1) {
+  margin-left: 250px;
+}
+.child:nth-child(5) {
+  margin-right: 20px;
+}
+
+.imp {
+  position: absolute;
+  position: fixed;
+  margin-top: -1000px;
+  margin-right: -50px;
+  margin-left: 1000px;
+  color: rgb(84, 8, 160);
+  -webkit-text-stroke: 1px #f32020; /* Толщина и цвет обводки */
+  z-index: 30;
+  font-family: "Lobster", sans-serif;
+  font-style: italic;
+  font-size: 50px;
+  width: 300px;
+  height: 100px;
+  border-radius: 40%;
+  text-align: center;
+  animation-name: move;
+  animation-duration: 5s;
+  animation-iteration-count: 3;
+}
+@keyframes move {
+  0% {
+    transform: translatex(0px) translatey(0px);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: translatex(-1800px) translatey(-700px);
+  }
+}
+
+.backone {
+  width: 100vw;
+  height: 50%;
+}
+.back {
+  width: 100vw;
+  height: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.img {
+  width: 400px;
+  z-index: 6;
+  margin: 10px;
+  align-self: center;
+}
+img:nth-child(5) {
+  height: calc(100%-90px);
+}
+/* почему-то эта карта выше остльных, хотя параметры равны. */
+
+#back1 {
+  position: absolute;
+  z-index: 5;
+  background-image: url(assets/img/banner.jpg);
+  width: 100vw;
+  background-size: cover !important;
+  background-repeat: repeat !important;
+  align-items: stretch;
+
+  height: 1500px;
+  width: 100vw;
+}
+.footer {
+  position: absolute;
+  background-image: url(assets/img/banner.jpg);
+  width: 100vw;
+  background-size: cover !important;
+  background-repeat: repeat !important;
+  align-items: stretch;
+}
+
+.form {
+  background-color: blueviolet;
+}
